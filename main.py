@@ -65,7 +65,7 @@ def getwiki(s):
 
 
 def main() -> None:
-    application = Application.builder().token("5523880479:AAF1G_ASC4xa2xp4ajSXnPz_zTdUBh0FVAw").build()
+    application = Application.builder().token("token").build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, article))
     application.add_handler(CommandHandler("random", randarticle))
